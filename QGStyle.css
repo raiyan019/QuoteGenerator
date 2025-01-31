@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #81d4fa; /* Light blue */
+    --secondary-color: #fff59d; /* Light yellow */
+    --text-color: #333; /* Dark gray for text */
+    --button-text-color: #333; /* Dark gray for button text */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(165deg, var(--secondary-color),var(--primary-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.5s ease;
+  }
+  
+  .container {
+    background: linear-gradient(135deg, #fff59d,  #81d4fa);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    transition: background 0.5s ease;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: var(--text-color); /* Dynamic text color */
+    font-size: 2.5em;
+    transition: color 0.5s ease;
+  }
+  
+  #quote-container {
+    margin-bottom: 20px;
+  }
+  
+  #quote-text {
+    font-size: 1.5em;
+    color: var(--text-color); /* Dynamic text color */
+    transition: color 0.5s ease;
+  }
+  
+  #quote-author {
+    font-size: 1.2em;
+    color: var(--text-color); /* Dynamic text color */
+    font-style: italic;
+    transition: color 0.5s ease;
+  }
+  
+  #generate-btn {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); /* Dynamic gradient */
+    color: var(--button-text-color); /* Dynamic button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.5s ease;
+  }
+  
+  #generate-btn:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 0 15px rgba(129, 212, 250, 0.6); /* Glow effect */
+  }
